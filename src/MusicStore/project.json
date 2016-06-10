@@ -25,7 +25,8 @@
     ],
     "emitEntryPoint": true,
     "preserveCompilationContext": true,
-    "warningsAsErrors": true
+    "warningsAsErrors": true,
+    "debugType": "portable"
   },
   "publishOptions": {
     "include": [
@@ -33,7 +34,9 @@
       "Views",
       "wwwroot",
       "config.json",
-      "web.config"
+      "web.config",
+      "Docker",
+      ".dockerignore"
     ]
   },
   "dependencies": {
