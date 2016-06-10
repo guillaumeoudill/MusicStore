@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  musicstore:
+    build:
+      context: ..
+      dockerfile: Docker/Dockerfile.debug
+      args:
+      - CONTAINER_PORT=${MUSICSTORE_PORT}
+      - SERVER_URLS=http://*:${MUSICSTORE_PORT}
+    ports:
+    - "${HOST_PORT}:${MUSICSTORE_PORT}"
+    volumes:
+    - ..:/app

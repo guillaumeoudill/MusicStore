@@ -13,6 +13,7 @@
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
     <DevelopmentServerPort>5001</DevelopmentServerPort>
+    <DockerToolsMinVersion>0.20</DockerToolsMinVersion>
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>

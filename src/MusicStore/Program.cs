@@ -15,6 +15,7 @@ namespace MusicStore
                 .Build();
 
             var builder = new WebHostBuilder()
+                .UseUrls(Environment.GetEnvironmentVariable("ASPNETCORE_SERVER.URLS") ?? String.Empty)
                 .UseConfiguration(config)
                 .UseIISIntegration()
                 .UseStartup("MusicStore");
